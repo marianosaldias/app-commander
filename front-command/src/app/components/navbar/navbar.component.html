@@ -1,0 +1,41 @@
+<header>
+	<nav class="navbar navbar-top navbar-default" role="navigation">
+		<div class="container">
+			<div>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="navbar-header">
+					<a class="navbar-brand" routerLink="/home" routerLinkActive="active" aria-label="Pacha Commander">
+						<h1>bistró</h1>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="main-navbar-collapse" data-seccion="Patrones">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a routerLink="/myorder" routerLinkActive="active">My Order</a></li>
+						<li><a routerLink="/tables" routerLinkActive="active">Tables</a></li>
+						<li><a routerLink="/orders" routerLinkActive="active">Orders</a></li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">CRM <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a routerLink="/users" routerLinkActive="active">Users</a></li>
+								<li><a routerLink="/products" routerLinkActive="active">Products</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<!--<li><a routerLink="/register" routerLinkActive="active">Register</a></li>-->
+								<li><a routerLink="/commander" routerLinkActive="active">Commander</a></li>
+								<li><a routerLink="/aboutus" routerLinkActive="active">About us</a></li>
+								<li><a routerLink="/login" routerLinkActive="active">Login</a></li>
+								<!--<li><a routerLink="/formusers" routerLinkActive="active">Register</a></li>-->
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header>

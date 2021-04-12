@@ -1,0 +1,47 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h1>Login Form</h1>           
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo.</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <form [formGroup]="f" autocomplete="off">
+                    <div class="form-group">
+                        <label for="user">User</label>
+                        <input class="form-control" type="text" id="nombre" formControlName="user">
+                    </div>
+                    <!--
+                    <div *ngIf="f.controls.user.errors && f.controls.user.dirty" class="alert alert-danger">
+                        <div *ngIf="f.controls.nombre.errors.required">Campo requerido</div>
+                        <div *ngIf="f.controls.nombre.errors.minlength">Se requieren {{f.controls.nombre.errors.minlength.requiredLength}} caracteres como mínimo, {{f.controls.nombre.errors.minlength.actualLength}} caracteres ingresados</div>
+                        <div *ngIf="f.controls.nombre.errors.maxlength">Se requieren {{f.controls.nombre.errors.maxlength.requiredLength}} caracteres como máximo, {{f.controls.nombre.errors.maxlength.actualLength}} caracteres ingresados</div>
+                        <div *ngIf="f.controls.nombre.errors.conEspacios">No se permiten espacios intermedios</div>
+                    </div>
+                    -->
+                
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input class="form-control" type="text" id="password" formControlName="password">
+                    </div>
+                
+                    <button class="btn btn-success my-3" [disabled]="!f.valid" (click)="enviar2()">Login</button>
+                </form>
+                
+                <!--
+                <br>
+                <h5><u>Errores del campo nombre</u></h5>
+                <pre>{{f.controls.nombre.errors | json}}</pre>
+                
+                <h5><u>Datos del formulario reactivo</u></h5>
+                <pre>{{f.value | json}}</pre>
+                -->
+
+            </div>
+        </div>
+    </div>
+
+</section>
